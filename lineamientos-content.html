@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lineamientos del Ejercicio - Portal de Noticias UCC</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+            background: white;
+        }
+        
+        .cover-page {
+            text-align: center;
+            padding: 60px 0;
+            page-break-after: always;
+        }
+        
+        .logo-title {
+            font-size: 48px;
+            font-weight: 700;
+            color: #4A90E2;
+            margin-bottom: 20px;
+        }
+        
+        .subtitle {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 40px;
+        }
+        
+        .university {
+            font-size: 20px;
+            color: #5a6c7d;
+            margin-top: 60px;
+        }
+        
+        .year {
+            font-size: 18px;
+            color: #8492a6;
+            margin-top: 10px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin: 40px 0 20px;
+            border-bottom: 3px solid #4A90E2;
+            padding-bottom: 10px;
+            page-break-after: avoid;
+        }
+        
+        h2 {
+            font-size: 24px;
+            color: #4A90E2;
+            margin: 30px 0 15px;
+            page-break-after: avoid;
+        }
+        
+        h3 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin: 20px 0 10px;
+            page-break-after: avoid;
+        }
+        
+        p {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        .highlight-box {
+            background: #f0f8ff;
+            border-left: 4px solid #4A90E2;
+            padding: 15px 20px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        .warning-box {
+            background: #fff9e6;
+            border-left: 4px solid #f0ad4e;
+            padding: 15px 20px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        .success-box {
+            background: #f0fff4;
+            border-left: 4px solid #28a745;
+            padding: 15px 20px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .category-section {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 8px;
+            page-break-inside: avoid;
+        }
+        
+        .category-title {
+            font-size: 22px;
+            color: #4A90E2;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #4A90E2;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .example {
+            background: #e8f4f8;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-style: italic;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #8492a6;
+            font-size: 14px;
+        }
+        
+        @media print {
+            body {
+                margin: 0;
+                padding: 15mm;
+            }
+            
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Página de Portada -->
+    <div class="cover-page">
+        <div class="logo-title">📰 Portal de Noticias UCC</div>
+        <div class="subtitle">Lineamientos del Ejercicio Académico</div>
+        <div style="margin: 60px 0;">
+            <p style="font-size: 20px; font-weight: 600;">Construcción de Contenido y UX Writing</p>
+            <p style="font-size: 18px; color: #5a6c7d;">Ejercicio Práctico para Estudiantes</p>
+        </div>
+        <div class="university">Universidad Cooperativa de Colombia</div>
+        <div style="font-size: 18px; color: #5a6c7d; margin-top: 10px;">Diseño Crossmedia - Séptimo Semestre</div>
+        <div class="year">Marzo 2026</div>
+    </div>
+
+    <!-- Índice -->
+    <div class="page-break"></div>
+    <h1>📚 Índice</h1>
+    <ol style="line-height: 2;">
+        <li>Introducción y Contexto del Ejercicio</li>
+        <li>Objetivos de Aprendizaje</li>
+        <li>Instrucciones Técnicas Paso a Paso</li>
+        <li>Guía de Buenas Prácticas de UX Writing</li>
+        <li>Lineamientos de Comunicación por Categoría
+            <ul>
+                <li>5.1. Salud</li>
+                <li>5.2. Política</li>
+                <li>5.3. Deportes</li>
+                <li>5.4. Tecnología</li>
+                <li>5.5. Cultura</li>
+                <li>5.6. Economía</li>
+                <li>5.7. Educación</li>
+                <li>5.8. Medio Ambiente</li>
+                <li>5.9. Entretenimiento</li>
+                <li>5.10. Ciencia</li>
+            </ul>
+        </li>
+        <li>Criterios de Evaluación</li>
+        <li>Instrucciones para Trabajo Colaborativo en GitHub</li>
+        <li>Recursos y Referencias</li>
+    </ol>
+
+    <!-- Sección 1: Introducción -->
+    <div class="page-break"></div>
+    <h1>1. Introducción y Contexto del Ejercicio</h1>
+    
+    <h2>🎯 Propósito</h2>
+    <p>Este ejercicio práctico está diseñado para desarrollar competencias fundamentales en la construcción de contenido digital, específicamente en el ámbito del periodismo web y la comunicación efectiva. Como estudiantes de Diseño Crossmedia, es esencial que dominen no solo los aspectos visuales y técnicos del diseño, sino también la creación de contenido de calidad que conecte con las audiencias.</p>
+    
+    <div class="highlight-box">
+        <strong>🔑 Concepto Clave:</strong> El UX Writing no se trata solo de escribir bien, sino de escribir con propósito. Cada palabra debe servir a la experiencia del usuario y facilitar la comprensión del mensaje.
+    </div>
+    
+    <h2>📋 Descripción del Ejercicio</h2>
+    <p>Durante este ejercicio de 2 horas, trabajarás en la creación de <strong>30 noticias</strong> distribuidas en <strong>10 categorías temáticas</strong>. Cada categoría requiere un tono de comunicación específico, una estructura particular y un enfoque editorial diferenciado.</p>
+    
+    <p>Las noticias se publicarán en un sitio web con diseño neumórfico, que ya está desarrollado y listo para que añadas tu contenido. Tu tarea es <strong>redactar contenido claro, preciso y adaptado a cada categoría</strong>, siguiendo los principios de UX Writing y escritura para personas.</p>
+    
+    <h2>⏱️ Duración y Modalidad</h2>
+    <ul>
+        <li><strong>Tiempo total:</strong> 2 horas</li>
+        <li><strong>Modalidad:</strong> Trabajo colaborativo</li>
+        <li><strong>Plataforma:</strong> GitHub (control de versiones)</li>
+        <li><strong>Entregable:</strong> 30 archivos HTML con noticias completas</li>
+    </ul>
+    
+    <div class="warning-box">
+        <strong>⚠️ Importante:</strong> Este ejercicio simula un entorno de trabajo real en medios digitales. La gestión del tiempo, la calidad del contenido y la colaboración son factores críticos para el éxito.
+    </div>
+
+    <!-- Sección 2: Objetivos -->
+    <div class="page-break"></div>
+    <h1>2. Objetivos de Aprendizaje</h1>
+    
+    <h2>🎯 Objetivo General</h2>
+    <p>Desarrollar habilidades de construcción de contenido, UX Writing y escritura para personas, mediante la redacción de noticias adaptadas a diferentes audiencias y propósitos comunicativos.</p>
+    
+    <h2>🎯 Objetivos Específicos</h2>
+    
+    <h3>1. Construcción de Contenido</h3>
+    <ul>
+        <li>Aplicar la estructura de pirámide invertida en la redacción periodística</li>
+        <li>Jerarquizar información según relevancia y necesidades del usuario</li>
+        <li>Integrar elementos multimedia (imágenes, citas, datos) de forma efectiva</li>
+        <li>Crear titulares y subtítulos que capten la atención sin sacrificar claridad</li>
+    </ul>
+    
+    <h3>2. UX Writing</h3>
+    <ul>
+        <li>Escribir con claridad y concisión, eliminando ambigüedades</li>
+        <li>Adaptar el lenguaje según el contexto y la audiencia objetivo</li>
+        <li>Usar voz activa y lenguaje directo para mejorar la comprensibilidad</li>
+        <li>Optimizar la escaneabilidad del contenido mediante subtítulos y párrafos cortos</li>
+    </ul>
+    
+    <h3>3. Escritura para Personas</h3>
+    <ul>
+        <li>Escribir pensando en las necesidades reales de los lectores</li>
+        <li>Evitar jerga innecesaria y términos confusos</li>
+        <li>Generar empatía a través del tono y estilo de comunicación</li>
+        <li>Priorizar la accesibilidad y la inclusión en el lenguaje</li>
+    </ul>
+    
+    <h3>4. Colaboración y Trabajo en Equipo</h3>
+    <ul>
+        <li>Utilizar herramientas de control de versiones (Git/GitHub)</li>
+        <li>Trabajar en paralelo con otros estudiantes sin conflictos</li>
+        <li>Revisar y proporcionar retroalimentación constructiva</li>
+        <li>Mantener una comunicación efectiva con el equipo</li>
+    </ul>
+    
+    <div class="success-box">
+        <strong>✅ Competencias Desarrolladas:</strong> Al completar este ejercicio, habrás practicado habilidades esenciales para tu futuro profesional como diseñador crossmedia, incluyendo redacción, edición, adaptación de tono y trabajo colaborativo.
+    </div>
+
+    <!-- Sección 3: Instrucciones Técnicas -->
+    <div class="page-break"></div>
+    <h1>3. Instrucciones Técnicas Paso a Paso</h1>
+    
+    <h2>Paso 1: Configuración Inicial</h2>
+    
+    <h3>1.1. Clonar el Repositorio</h3>
+    <div class="example">
+        <code>git clone [URL-DEL-REPOSITORIO]</code><br>
+        <code>cd ejercicio_noticias_ucc</code>
+    </div>
+    
+    <h3>1.2. Crear tu Rama de Trabajo</h3>
+    <p>Cada estudiante debe trabajar en su propia rama para evitar conflictos:</p>
+    <div class="example">
+        <code>git checkout -b tu-nombre-apellido</code><br>
+        Ejemplo: <code>git checkout -b maria-rodriguez</code>
+    </div>
+    
+    <div class="warning-box">
+        <strong>⚠️ Nunca trabajes directamente en la rama <code>main</code>.</strong> Siempre crea una rama personal.
+    </div>
+    
+    <h2>Paso 2: Crear las Carpetas de Trabajo</h2>
+    <p>El repositorio ya incluye la estructura básica, pero necesitarás crear las subcarpetas para organizar tus noticias:</p>
+    
+    <div class="example">
+        <code>mkdir -p noticias/salud noticias/politica noticias/deportes</code><br>
+        <code>mkdir -p noticias/tecnologia noticias/cultura noticias/economia</code><br>
+        <code>mkdir -p noticias/educacion noticias/medio-ambiente</code><br>
+        <code>mkdir -p noticias/entretenimiento noticias/ciencia</code>
+    </div>
+    
+    <h2>Paso 3: Crear una Noticia</h2>
+    
+    <h3>3.1. Duplicar la Plantilla</h3>
+    <p>Para cada noticia, duplica el archivo <code>template-noticia.html</code>:</p>
+    <div class="example">
+        <code>cp template-noticia.html noticias/salud/nueva-vacuna-covid.html</code>
+    </div>
+    
+    <h3>3.2. Editar el Contenido</h3>
+    <p>Abre el archivo con tu editor de código y sigue estas indicaciones:</p>
+    
+    <ol>
+        <li><strong>Lee los comentarios HTML</strong> que dicen <code>&lt;!-- INSTRUCCIÓN: ... --&gt;</code></li>
+        <li><strong>Reemplaza el lorem ipsum</strong> con tu contenido real</li>
+        <li><strong>Actualiza los metadatos:</strong>
+            <ul>
+                <li>Título de la página (<code>&lt;title&gt;</code>)</li>
+                <li>Meta description</li>
+                <li>Fecha de publicación</li>
+                <li>Autor (tu nombre)</li>
+                <li>Categoría</li>
+            </ul>
+        </li>
+        <li><strong>Agrega imágenes relevantes:</strong>
+            <ul>
+                <li>Imagen destacada</li>
+                <li>Al menos 2 imágenes de apoyo</li>
+                <li>Escribe descripciones alt significativas</li>
+                <li>Incluye pies de foto con créditos</li>
+            </ul>
+        </li>
+        <li><strong>Escribe el contenido siguiendo la estructura:</strong>
+            <ul>
+                <li>Primer párrafo: responde las 5W (Qué, Quién, Cuándo, Dónde, Por qué)</li>
+                <li>Cuerpo: desarrolla la información en orden de importancia</li>
+                <li>Incluye citas textuales si son relevantes</li>
+                <li>Usa subtítulos para organizar secciones</li>
+            </ul>
+        </li>
+        <li><strong>Añade etiquetas</strong> al final del artículo (5-8 palabras clave)</li>
+    </ol>
+    
+    <h3>3.3. Nomenclatura de Archivos</h3>
+    <p>Usa nombres descriptivos en minúsculas, con guiones en lugar de espacios:</p>
+    
+    <table>
+        <tr>
+            <th>Correcto ✅</th>
+            <th>Incorrecto ❌</th>
+        </tr>
+        <tr>
+            <td>nueva-vacuna-covid-colombia.html</td>
+            <td>noticia1.html</td>
+        </tr>
+        <tr>
+            <td>elecciones-presidenciales-2026.html</td>
+            <td>Noticia Política.html</td>
+        </tr>
+        <tr>
+            <td>inteligencia-artificial-educacion.html</td>
+            <td>mi_articulo.html</td>
+        </tr>
+    </table>
+    
+    <h2>Paso 4: Guardar tus Cambios</h2>
+    
+    <h3>4.1. Agregar Archivos al Área de Stage</h3>
+    <div class="example">
+        <code>git add noticias/salud/nueva-vacuna-covid.html</code><br>
+        O para agregar todos los cambios:<br>
+        <code>git add .</code>
+    </div>
+    
+    <h3>4.2. Hacer Commit</h3>
+    <p>Escribe un mensaje descriptivo que explique qué contiene el commit:</p>
+    <div class="example">
+        <code>git commit -m "Añadida noticia sobre nueva vacuna COVID en Colombia"</code>
+    </div>
+    
+    <div class="highlight-box">
+        <strong>Buenas Prácticas de Commits:</strong>
+        <ul style="margin-top: 10px;">
+            <li>Haz commits frecuentes (idealmente uno por noticia)</li>
+            <li>Usa mensajes claros y descriptivos</li>
+            <li>Escribe en presente: "Añade" en lugar de "Añadido"</li>
+            <li>Sé específico sobre los cambios realizados</li>
+        </ul>
+    </div>
+    
+    <h2>Paso 5: Subir tus Cambios</h2>
+    <div class="example">
+        <code>git push origin tu-nombre-apellido</code>
+    </div>
+    
+    <h2>Paso 6: Crear un Pull Request</h2>
+    <ol>
+        <li>Ve al repositorio en GitHub</li>
+        <li>Haz clic en "Compare & pull request"</li>
+        <li>Escribe un título descriptivo</li>
+        <li>Añade una descripción con la lista de noticias creadas</li>
+        <li>Asigna el pull request al profesor</li>
+    </ol>
+
+    <!-- Sección 4: Guía de UX Writing -->
+    <div class="page-break"></div>
+    <h1>4. Guía de Buenas Prácticas de UX Writing</h1>
+    
+    <h2>📝 Principios Fundamentales</h2>
+    
+    <h3>1. Claridad sobre Todo</h3>
+    <p>La claridad es el principio más importante del UX Writing. El lector debe entender tu mensaje sin esfuerzo.</p>
+    
+    <table>
+        <tr>
+            <th>Evita esto ❌</th>
+            <th>Mejor así ✅</th>
+        </tr>
+        <tr>
+            <td>"La implementación del nuevo paradigma educativo ha generado controversia en el sector académico"</td>
+            <td>"El nuevo modelo educativo ha generado debate entre profesores y estudiantes"</td>
+        </tr>
+        <tr>
+            <td>"Se procederá a la realización de una evaluación exhaustiva"</td>
+            <td>"Evaluaremos el proyecto en detalle"</td>
+        </tr>
+    </table>
+    
+    <h3>2. Concisión</h3>
+    <p>Elimina palabras innecesarias. Cada palabra debe aportar valor.</p>
+    
+    <table>
+        <tr>
+            <th>Evita esto ❌</th>
+            <th>Mejor así ✅</th>
+        </tr>
+        <tr>
+            <td>"En el momento actual"</td>
+            <td>"Ahora" o "Actualmente"</td>
+        </tr>
+        <tr>
+            <td>"Con el objetivo de"</td>
+            <td>"Para"</td>
+        </tr>
+        <tr>
+            <td>"A pesar del hecho de que"</td>
+            <td>"Aunque"</td>
+        </tr>
+    </table>
+    
+    <h3>3. Voz Activa</h3>
+    <p>La voz activa es más directa y fácil de entender que la voz pasiva.</p>
+    
+    <table>
+        <tr>
+            <th>Voz Pasiva ❌</th>
+            <th>Voz Activa ✅</th>
+        </tr>
+        <tr>
+            <td>"La vacuna fue aprobada por la OMS"</td>
+            <td>"La OMS aprobó la vacuna"</td>
+        </tr>
+        <tr>
+            <td>"El proyecto será implementado por el gobierno"</td>
+            <td>"El gobierno implementará el proyecto"</td>
+        </tr>
+    </table>
+    
+    <h3>4. Evita Jerga Innecesaria</h3>
+    <p>Si debes usar términos técnicos, explícalos brevemente.</p>
+    
+    <div class="example">
+        <strong>Evita:</strong> "La implementación del framework permitió optimizar el throughput"<br>
+        <strong>Mejor:</strong> "El nuevo sistema permitió procesar más transacciones por segundo"
+    </div>
+    
+    <h3>5. Usa Subtítulos Descriptivos</h3>
+    <p>Los subtítulos ayudan a escanear el contenido y encontrar información rápidamente.</p>
+    
+    <div class="highlight-box">
+        <strong>Ejemplo de estructura con subtítulos:</strong>
+        <ul style="margin-top: 10px;">
+            <li>H1: "Nueva vacuna reduce hospitalizaciones en un 85%"</li>
+            <li>H2: "Resultados de los ensayos clínicos"</li>
+            <li>H2: "Disponibilidad en Colombia"</li>
+            <li>H2: "Qué esperar en los próximos meses"</li>
+        </ul>
+    </div>
+    
+    <h3>6. Pirámide Invertida</h3>
+    <p>Presenta la información más importante primero, seguida de detalles secundarios.</p>
+    
+    <div style="padding: 20px; background: #f8f9fa; margin: 20px 0;">
+        <div style="background: #4A90E2; color: white; padding: 15px; margin-bottom: 2px;">
+            <strong>PRIMER PÁRRAFO: Las 5W</strong><br>
+            Qué, Quién, Cuándo, Dónde, Por qué
+        </div>
+        <div style="background: #6BA4E8; color: white; padding: 15px; margin-bottom: 2px;">
+            <strong>CUERPO: Detalles Importantes</strong><br>
+            Contexto, antecedentes, datos relevantes
+        </div>
+        <div style="background: #92BBEC; color: white; padding: 15px;">
+            <strong>FINAL: Información Complementaria</strong><br>
+            Detalles adicionales, perspectivas futuras
+        </div>
+    </div>
+    
+    <h2>📏 Estructura de una Noticia</h2>
+    
+    <h3>Título (H1)</h3>
+    <ul>
+        <li><strong>Longitud:</strong> 50-70 caracteres</li>
+        <li><strong>Características:</strong> Claro, conciso, informativo</li>
+        <li><strong>Debe incluir:</strong> El hecho principal</li>
+        <li><strong>Evitar:</strong> Clickbait, ambigüedad, preguntas retóricas</li>
+    </ul>
+    
+    <div class="example">
+        <strong>✅ Buen título:</strong> "Colombia lanza programa de energía solar para zonas rurales"<br>
+        <strong>❌ Mal título:</strong> "No vas a creer lo que pasó con la energía en Colombia"
+    </div>
+    
+    <h3>Subtítulo / Bajada</h3>
+    <ul>
+        <li><strong>Longitud:</strong> 100-150 caracteres</li>
+        <li><strong>Función:</strong> Complementar el título con información adicional</li>
+        <li><strong>Debe incluir:</strong> Detalles que no cupieron en el título</li>
+    </ul>
+    
+    <div class="example">
+        <strong>Ejemplo de subtítulo:</strong> "El proyecto beneficiará a 50.000 familias en 200 municipios y reducirá costos de electricidad en un 40%"
+    </div>
+    
+    <h3>Primer Párrafo (Lead)</h3>
+    <ul>
+        <li><strong>Longitud:</strong> 60-80 palabras</li>
+        <li><strong>Estructura:</strong> Responde las 5W
+            <ul>
+                <li><strong>Qué:</strong> ¿Qué sucedió?</li>
+                <li><strong>Quién:</strong> ¿A quién involucra?</li>
+                <li><strong>Cuándo:</strong> ¿Cuándo ocurrió?</li>
+                <li><strong>Dónde:</strong> ¿Dónde sucedió?</li>
+                <li><strong>Por qué:</strong> ¿Por qué es importante?</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>Cuerpo del Artículo</h3>
+    <ul>
+        <li><strong>Párrafos:</strong> Mínimo 5, idealmente 6-8</li>
+        <li><strong>Longitud de párrafos:</strong> 40-60 palabras cada uno</li>
+        <li><strong>Estructura:</strong> Una idea principal por párrafo</li>
+        <li><strong>Elementos a incluir:</strong>
+            <ul>
+                <li>Contexto y antecedentes</li>
+                <li>Desarrollo del acontecimiento</li>
+                <li>Citas de fuentes relevantes</li>
+                <li>Datos y estadísticas</li>
+                <li>Implicaciones y perspectivas futuras</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h2>📸 Imágenes y Elementos Multimedia</h2>
+    
+    <h3>Imagen Destacada</h3>
+    <ul>
+        <li>Debe representar visualmente el tema de la noticia</li>
+        <li>Alta calidad y resolución adecuada</li>
+        <li>Descripción alt detallada para accesibilidad</li>
+        <li>Pie de foto con contexto y créditos</li>
+    </ul>
+    
+    <h3>Imágenes de Apoyo</h3>
+    <ul>
+        <li>Mínimo 2 imágenes adicionales</li>
+        <li>Complementan y amplían la información textual</li>
+        <li>Ubicadas estratégicamente para dividir bloques de texto</li>
+        <li>Cada imagen con su propio pie de foto</li>
+    </ul>
+    
+    <h3>Citas Textuales</h3>
+    <p>Las citas añaden credibilidad y voz humana a la noticia:</p>
+    <ul>
+        <li>Usa comillas para citas directas</li>
+        <li>Identifica claramente al autor de la cita</li>
+        <li>Incluye el cargo o contexto relevante</li>
+        <li>Asegúrate de que la cita aporte valor</li>
+    </ul>
+    
+    <div class="example">
+        <strong>Ejemplo de cita bien estructurada:</strong><br>
+        "Este programa representa un paso fundamental hacia la transición energética del país", afirmó María García, ministra de Energía.
+    </div>
+    
+    <h2>🏷️ Etiquetas (Tags)</h2>
+    <p>Las etiquetas ayudan a categorizar y encontrar contenido relacionado:</p>
+    <ul>
+        <li>Incluye 5-8 palabras clave relevantes</li>
+        <li>Usa palabras específicas, no genéricas</li>
+        <li>Piensa en cómo los usuarios buscarían este contenido</li>
+        <li>Incluye sinónimos y variaciones relevantes</li>
+    </ul>
+    
+    <div class="example">
+        <strong>Ejemplo para noticia sobre energía solar:</strong><br>
+        energía-solar, energías-renovables, zonas-rurales, electrificación, sostenibilidad, medio-ambiente, gobierno-colombia
+    </div>
+
+    <!-- Sección 5: Lineamientos por Categoría -->
+    <div class="page-break"></div>
+    <h1>5. Lineamientos de Comunicación por Categoría</h1>
+    
+    <p>Cada categoría de noticias tiene características específicas en cuanto a tono, estilo, estructura y enfoque editorial. A continuación, encontrarás lineamientos detallados para cada una de las 10 categorías.</p>
+    
+    <!-- CATEGORÍA 1: SALUD -->
+    <div class="category-section">
+        <div class="category-title">❤️ 5.1. SALUD</div>
+        
+        <h3>Tono de Voz</h3>
+        <ul>
+            <li><strong>Serio y profesional</strong> sin ser alarmista</li>
+            <li><strong>Empático y sensible</strong> al tratar temas delicados</li>
+            <li><strong>Informativo y educativo</strong> para empoderar al lector</li>
+            <li><strong>Basado en evidencia</strong> científica y fuentes confiables</li>
+        </ul>
+        
+        <h3>Tipo de Lenguaje</h3>
+        <ul>
+            <li>Términos médicos explicados en lenguaje sencillo</li>
+            <li>Evitar tecnicismos innecesarios</li>
+            <li>Usar analogías para conceptos complejos</li>
+            <li>Preferir "personas con diabetes" sobre "diabéticos" (lenguaje centrado en la persona)</li>
+        </ul>
+        
+        <h3>Estructura Recomendada</h3>
+        <ol>
+            <li><strong>Titular:</strong> Qué avance/problema de salud y su impacto</li>
+            <li><strong>Lead:</strong> Información clave: qué, quién (afectados/investigadores), cuándo, dónde</li>
+            <li><strong>Contexto médico:</strong> Antecedentes de la enfermedad/tratamiento</li>
+            <li><strong>Evidencia científica:</strong> Estudios, datos, estadísticas</li>
+            <li><strong>Voces expertas:</strong> Citas de médicos, investigadores, autoridades sanitarias</li>
+            <li><strong>Impacto práctico:</strong> Qué significa para los pacientes/población</li>
+            <li><strong>Próximos pasos:</strong> Disponibilidad, recomendaciones, seguimiento</li>
+        </ol>
+        
+        <h3>Palabras Clave Frecuentes</h3>
+        <p>salud, tratamiento, prevención, pacientes, estudio, investigación, síntomas, diagnóstico, vacuna, terapia, bienestar, medicina, sistema-sanitario</p>
+        
+        <h3>Enfoque Editorial</h3>
+        <ul>
+            <li><strong>Prioridad 1:</strong> Exactitud y verificación de datos médicos</li>
+            <li><strong>Prioridad 2:</strong> Claridad para el público general</li>
+            <li><strong>Prioridad 3:</strong> Contexto que ayude a tomar decisiones informadas</li>
+            <li><strong>Evitar:</strong> Sensacionalismo, promesas de curas milagrosas, diagnósticos</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Ejemplo de título efectivo:</strong><br>
+            "Nueva terapia reduce síntomas de artritis en un 70% según estudio clínico"
+        </div>
+    </div>
+    
+    <!-- CATEGORÍA 2: POLÍTICA -->
+    <div class="page-break"></div>
+    <div class="category-section">
+        <div class="category-title">🏛️ 5.2. POLÍTICA</div>
+        
+        <h3>Tono de Voz</h3>
+        <ul>
+            <li><strong>Objetivo e imparcial</strong> sin sesgo partidista</li>
+            <li><strong>Analítico y crítico</strong> sin ser confrontacional</li>
+            <li><strong>Formal pero accesible</strong> para diversos lectores</li>
+            <li><strong>Equilibrado</strong> presentando múltiples perspectivas</li>
+        </ul>
+        
+        <h3>Tipo de Lenguaje</h3>
+        <ul>
+            <li>Términos políticos explicados cuando sea necesario</li>
+            <li>Evitar eufemismos que oscurezcan la verdad</li>
+            <li>Preferir lenguaje concreto sobre abstracto</li>
+            <li>Citar textualmente a las fuentes para mantener objetividad</li>
+        </ul>
+        
+        <h3>Estructura Recomendada</h3>
+        <ol>
+            <li><strong>Titular:</strong> Acción política o evento y sus actores principales</li>
+            <li><strong>Lead:</strong> El hecho político, quién lo realiza, cuándo, dónde, por qué es relevante</li>
+            <li><strong>Antecedentes:</strong> Contexto histórico y político del tema</li>
+            <li><strong>Posiciones:</strong> Perspectivas de diferentes actores políticos</li>
+            <li><strong>Análisis:</strong> Implicaciones políticas, sociales, económicas</li>
+            <li><strong>Voces múltiples:</strong> Citas de políticos, analistas, ciudadanos</li>
+            <li><strong>Próximos pasos:</strong> Qué sigue en el proceso político</li>
+        </ol>
+        
+        <h3>Palabras Clave Frecuentes</h3>
+        <p>gobierno, congreso, legislación, elecciones, política-pública, reforma, partido, candidato, votación, democracia, debate, proyecto-de-ley</p>
+        
+        <h3>Enfoque Editorial</h3>
+        <ul>
+            <li><strong>Prioridad 1:</strong> Verificación rigurosa de hechos y declaraciones</li>
+            <li><strong>Prioridad 2:</strong> Equilibrio entre diferentes posiciones</li>
+            <li><strong>Prioridad 3:</strong> Contexto que ayude a entender el impacto</li>
+            <li><strong>Evitar:</strong> Tomar partido, opiniones personales, rumores sin confirmar</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Ejemplo de título efectivo:</strong><br>
+            "Congreso aprueba reforma tributaria con cambios para clase media"
+        </div>
+        
+        <div class="warning-box">
+            <strong>⚠️ Importante:</strong> En noticias políticas, es crucial mantener la objetividad. Presenta hechos verificables y múltiples perspectivas sin favorecer ninguna posición.
+        </div>
+    </div>
+    
+    <!-- CATEGORÍA 3: DEPORTES -->
+    <div class="page-break"></div>
+    <div class="category-section">
+        <div class="category-title">⚽ 5.3. DEPORTES</div>
+        
+        <h3>Tono de Voz</h3>
+        <ul>
+            <li><strong>Dinámico y energético</strong> reflejando la emoción del deporte</li>
+            <li><strong>Apasionado pero profesional</strong> sin caer en el fanatismo</li>
+            <li><strong>Narrativo</strong> contando historias humanas detrás del deporte</li>
+            <li><strong>Inclusivo</strong> para aficionados casuales y expertos</li>
+        </ul>
+        
+        <h3>Tipo de Lenguaje</h3>
+        <ul>
+            <li>Términos deportivos explicados si son específicos</li>
+            <li>Usar verbos de acción para crear dinamismo</li>
+            <li>Incluir estadísticas y datos relevantes</li>
+            <li>Expresiones coloquiales del deporte cuando sean apropiadas</li>
+        </ul>
+        
+        <h3>Estructura Recomendada</h3>
+        <ol>
+            <li><strong>Titular:</strong> Resultado, logro o evento deportivo destacado</li>
+            <li><strong>Lead:</strong> El momento decisivo o resultado clave</li>
+            <li><strong>Desarrollo del evento:</strong> Cómo se desarrolló la competencia/partido</li>
+            <li><strong>Momentos clave:</strong> Jugadas, goles, puntos decisivos</li>
+            <li><strong>Contexto:</strong> Posiciones en tabla, historial, antecedentes</li>
+            <li><strong>Declaraciones:</strong> Citas de atletas, entrenadores, dirigentes</li>
+            <li><strong>Próximos desafíos:</strong> Siguientes partidos, competencias, objetivos</li>
+        </ol>
+        
+        <h3>Palabras Clave Frecuentes</h3>
+        <p>campeonato, victoria, derrota, entrenador, equipo, jugador, competencia, resultado, gol, punto, marca, récord, torneo, clasificación</p>
+        
+        <h3>Enfoque Editorial</h3>
+        <ul>
+            <li><strong>Prioridad 1:</strong> Resultados y hechos objetivos</li>
+            <li><strong>Prioridad 2:</strong> Historia humana y emocional del deporte</li>
+            <li><strong>Prioridad 3:</strong> Estadísticas que den contexto</li>
+            <li><strong>Evitar:</strong> Favoritismo exagerado, críticas destructivas a atletas</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Ejemplo de título efectivo:</strong><br>
+            "Colombia clasifica al Mundial con goleada histórica 4-0 sobre Argentina"
+        </div>
+    </div>
+    
+    <!-- CATEGORÍA 4: TECNOLOGÍA -->
+    <div class="page-break"></div>
+    <div class="category-section">
+        <div class="category-title">💻 5.4. TECNOLOGÍA</div>
+        
+        <h3>Tono de Voz</h3>
+        <ul>
+            <li><strong>Informativo y entusiasta</strong> sobre la innovación</li>
+            <li><strong>Accesible</strong> para lectores no técnicos</li>
+            <li><strong>Actualizado y moderno</strong> en el lenguaje</li>
+            <li><strong>Práctico</strong> enfocado en el impacto real en las personas</li>
+        </ul>
+        
+        <h3>Tipo de Lenguaje</h3>
+        <ul>
+            <li>Términos técnicos explicados con analogías cotidianas</li>
+            <li>Evitar jerga innecesaria (buzzwords)</li>
+            <li>Usar comparaciones para explicar especificaciones</li>
+            <li>Enfocarse en beneficios para el usuario, no solo características</li>
+        </ul>
+        
+        <h3>Estructura Recomendada</h3>
+        <ol>
+            <li><strong>Titular:</strong> Innovación tecnológica y su principal beneficio</li>
+            <li><strong>Lead:</strong> Qué es la tecnología, quién la desarrolla, cuándo estará disponible</li>
+            <li><strong>Cómo funciona:</strong> Explicación técnica simplificada</li>
+            <li><strong>Características principales:</strong> Especificaciones relevantes</li>
+            <li><strong>Aplicaciones prácticas:</strong> Cómo impacta la vida diaria</li>
+            <li><strong>Contexto del mercado:</strong> Competencia, precio, disponibilidad</li>
+            <li><strong>Perspectiva:</strong> Tendencias futuras, evoluciones esperadas</li>
+        </ol>
+        
+        <h3>Palabras Clave Frecuentes</h3>
+        <p>tecnología, innovación, inteligencia-artificial, aplicación, software, hardware, desarrollo, lanzamiento, actualización, dispositivo, digital, startup</p>
+        
+        <h3>Enfoque Editorial</h3>
+        <ul>
+            <li><strong>Prioridad 1:</strong> Beneficios reales para los usuarios</li>
+            <li><strong>Prioridad 2:</strong> Explicación clara de conceptos complejos</li>
+            <li><strong>Prioridad 3:</strong> Contexto de cómo encaja en tendencias actuales</li>
+            <li><strong>Evitar:</strong> Exageraciones ("revolucionario"), jerga excesiva, tecnocentrismo</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Ejemplo de título efectivo:</strong><br>
+            "Nueva IA de Google traduce conversaciones en tiempo real sin conexión a internet"
+        </div>
+    </div>
+    
+    <!-- CATEGORÍA 5: CULTURA -->
+    <div class="page-break"></div>
+    <div class="category-section">
+        <div class="category-title">🎨 5.5. CULTURA</div>
+        
+        <h3>Tono de Voz</h3>
+        <ul>
+            <li><strong>Sensible y respetuoso</strong> con expresiones culturales diversas</li>
+            <li><strong>Apreciativo y crítico</strong> sin ser elitista</li>
+            <li><strong>Descriptivo y evocador</strong> para transmitir experiencias</li>
+            <li><strong>Inclusivo</strong> celebrando la diversidad cultural</li>
+        </ul>
+        
+        <h3>Tipo de Lenguaje</h3>
+        <ul>
+            <li>Lenguaje rico y descriptivo para transmitir experiencias sensoriales</li>
+            <li>Términos artísticos explicados cuando sea necesario</li>
+            <li>Evitar snobismo o lenguaje excesivamente académico</li>
+            <li>Usar metáforas y comparaciones para describir arte</li>
+        </ul>
+        
+        <h3>Estructura Recomendada</h3>
+        <ol>
+            <li><strong>Titular:</strong> Evento cultural, obra o expresión artística destacada</li>
+            <li><strong>Lead:</strong> El evento/obra, artista, cuándo, dónde, por qué es significativo</li>
+            <li><strong>Descripción:</strong> Elementos visuales, sonoros, conceptuales</li>
+            <li><strong>Contexto artístico:</strong> Movimiento, influencias, trayectoria del artista</li>
+            <li><strong>Impacto cultural:</strong> Significado para la comunidad/sociedad</li>
+            <li><strong>Voces:</strong> Citas de artistas, curadores, críticos, asistentes</li>
+            <li><strong>Información práctica:</strong> Cómo acceder, horarios, costos</li>
+        </ol>
+        
+        <h3>Palabras Clave Frecuentes</h3>
+        <p>arte, cultura, exposición, festival, artista, obra, museo, galería, patrimonio, teatro, música, literatura, tradición, expresión</p>
+        
+        <h3>Enfoque Editorial</h3>
+        <ul>
+            <li><strong>Prioridad 1:</strong> Hacer el arte accesible a todos</li>
+            <li><strong>Prioridad 2:</strong> Contextualizar la obra en su momento cultural</li>
+            <li><strong>Prioridad 3:</strong> Celebrar la diversidad de expresiones</li>
+            <li><strong>Evitar:</strong> Elitismo, juicios absolutos, imposición de gustos</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Ejemplo de título efectivo:</strong><br>
+            "Botero regresa a Medellín con exposición gratuita de 50 obras inéditas"
+        </div>
+    </div>
+    
+    <!-- CATEGORÍA 6: ECONOMÍA -->
+    <div class="page-break"></div>
+    <div class="category-section">
+        <div class="category-title">💰 5.6. ECONOMÍA</div>
+        
+        <h3>Tono de Voz</h3>
+        <ul>
+            <li><strong>Serio y autorizado</strong> en el manejo de cifras</li>
+            <li><strong>Claro y didáctico</strong> al explicar conceptos complejos</li>
+            <li><strong>Objetivo</strong> presentando datos sin sesgo</li>
+            <li><strong>Práctico</strong> enfocado en el impacto real en las personas</li>
+        </ul>
+        
+        <h3>Tipo de Lenguaje</h3>
+        <ul>
+            <li>Términos económicos explicados con ejemplos cotidianos</li>
+            <li>Cifras presentadas con contexto y comparaciones</li>
+            <li>Evitar jerga financiera innecesaria</li>
+            <li>Usar analogías para explicar conceptos macroeconómicos</li>
+        </ul>
+        
+        <h3>Estructura Recomendada</h3>
+        <ol>
+            <li><strong>Titular:</strong> Hecho económico y su impacto principal</li>
+            <li><strong>Lead:</strong> El evento económico, cifras clave, quiénes se ven afectados</li>
+            <li><strong>Cifras y datos:</strong> Estadísticas relevantes con contexto</li>
+            <li><strong>Análisis:</strong> Qué significan estos números</li>
+            <li><strong>Causas:</strong> Factores que llevaron a esta situación</li>
+            <li><strong>Voces expertas:</strong> Citas de economistas, analistas, empresarios</li>
+            <li><strong>Impacto práctico:</strong> Cómo afecta a empresas, trabajadores, consumidores</li>
+            <li><strong>Proyecciones:</strong> Expectativas y escenarios futuros</li>
+        </ol>
+        
+        <h3>Palabras Clave Frecuentes</h3>
+        <p>economía, mercado, inflación, crecimiento, PIB, empresa, inversión, bolsa, finanzas, empleo, comercio, negocio, precio</p>
+        
+        <h3>Enfoque Editorial</h3>
+        <ul>
+            <li><strong>Prioridad 1:</strong> Exactitud en cifras y datos</li>
+            <li><strong>Prioridad 2:</strong> Explicar el impacto en la vida diaria</li>
+            <li><strong>Prioridad 3:</strong> Contextualizar dentro de tendencias económicas</li>
+            <li><strong>Evitar:</strong> Alarmismo, predicciones sin fundamento, sesgo ideológico</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Ejemplo de título efectivo:</strong><br>
+            "Inflación en Colombia baja a 3.5% y alivia presión en el costo de vida"
+        </div>
+    </div>
+    
+    <!-- CATEGORÍA 7: EDUCACIÓN -->
+    <div class="page-break"></div>
+    <div class="category-section">
+        <div class="category-title">🎓 5.7. EDUCACIÓN</div>
+        
+        <h3>Tono de Voz</h3>
+        <ul>
+            <li><strong>Optimista y constructivo</strong> sobre el futuro educativo</li>
+            <li><strong>Informativo y orientador</strong> para estudiantes y familias</li>
+            <li><strong>Respetuoso</strong> con docentes y comunidad educativa</li>
+            <li><strong>Crítico pero propositivo</strong> ante problemas educativos</li>
+        </ul>
+        
+        <h3>Tipo de Lenguaje</h3>
+        <ul>
+            <li>Términos pedagógicos explicados de forma sencilla</li>
+            <li>Lenguaje inclusivo que abarque todas las modalidades educativas</li>
+            <li>Enfoque en beneficios para estudiantes y sociedad</li>
+            <li>Evitar tecnicismos académicos innecesarios</li>
+        </ul>
+        
+        <h3>Estructura Recomendada</h3>
+        <ol>
+            <li><strong>Titular:</strong> Iniciativa educativa, política o innovación pedagógica</li>
+            <li><strong>Lead:</strong> El programa/cambio educativo, quién lo implementa, a quiénes beneficia</li>
+            <li><strong>Detalles del programa:</strong> Cómo funciona, qué incluye</li>
+            <li><strong>Beneficiarios:</strong> Cuántos estudiantes, niveles, regiones</li>
+            <li><strong>Contexto educativo:</strong> Situación actual, necesidades que atiende</li>
+            <li><strong>Voces educativas:</strong> Citas de docentes, estudiantes, rectores, expertos</li>
+            <li><strong>Impacto esperado:</strong> Objetivos, metas, transformación proyectada</li>
+        </ol>
+        
+        <h3>Palabras Clave Frecuentes</h3>
+        <p>educación, estudiante, docente, universidad, colegio, aprendizaje, enseñanza, pedagogía, becas, calidad-educativa, formación, academia</p>
+        
+        <h3>Enfoque Editorial</h3>
+        <ul>
+            <li><strong>Prioridad 1:</strong> Información útil para la comunidad educativa</li>
+            <li><strong>Prioridad 2:</strong> Destacar innovaciones y buenas prácticas</li>
+            <li><strong>Prioridad 3:</strong> Visibilizar desafíos con perspectiva constructiva</li>
+            <li><strong>Evitar:</strong> Comparaciones que estigmaticen, soluciones simplistas, elitismo</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Ejemplo de título efectivo:</strong><br>
+            "Universidad Nacional ofrece 500 becas de pregrado para jóvenes de zonas rurales"
+        </div>
+    </div>
+    
+    <!-- CATEGORÍA 8: MEDIO AMBIENTE -->
+    <div class="page-break"></div>
+    <div class="category-section">
+        <div class="category-title">🌍 5.8. MEDIO AMBIENTE</div>
+        
+        <h3>Tono de Voz</h3>
+        <ul>
+            <li><strong>Urgente pero no alarmista</strong> sobre desafíos ambientales</li>
+            <li><strong>Esperanzador</strong> al presentar soluciones y acciones positivas</li>
+            <li><strong>Científico y riguroso</strong> basado en evidencia</li>
+            <li><strong>Motivador</strong> para inspirar acción individual y colectiva</li>
+        </ul>
+        
+        <h3>Tipo de Lenguaje</h3>
+        <ul>
+            <li>Términos científicos explicados con ejemplos tangibles</li>
+            <li>Datos y cifras contextualizados en impacto real</li>
+            <li>Lenguaje que conecte problemas globales con acciones locales</li>
+            <li>Evitar catastrofismo paralizante</li>
+        </ul>
+        
+        <h3>Estructura Recomendada</h3>
+        <ol>
+            <li><strong>Titular:</strong> Situación ambiental o acción ecológica destacada</li>
+            <li><strong>Lead:</strong> El evento/problema ambiental, ubicación, qué está en juego</li>
+            <li><strong>Dimensión del problema:</strong> Datos, cifras, extensión del impacto</li>
+            <li><strong>Causas:</strong> Factores que generan la situación</li>
+            <li><strong>Consecuencias:</strong> Impacto en ecosistemas, comunidades, futuro</li>
+            <li><strong>Soluciones:</strong> Iniciativas, proyectos, acciones en marcha</li>
+            <li><strong>Voces:</strong> Citas de ambientalistas, científicos, comunidades afectadas</li>
+            <li><strong>Llamado a la acción:</strong> Qué pueden hacer los lectores</li>
+        </ol>
+        
+        <h3>Palabras Clave Frecuentes</h3>
+        <p>medio-ambiente, cambio-climático, sostenibilidad, conservación, biodiversidad, energías-renovables, contaminación, reciclaje, ecosistema, naturaleza</p>
+        
+        <h3>Enfoque Editorial</h3>
+        <ul>
+            <li><strong>Prioridad 1:</strong> Información científica verificada</li>
+            <li><strong>Prioridad 2:</strong> Equilibrio entre problema y soluciones</li>
+            <li><strong>Prioridad 3:</strong> Empoderar a los lectores para actuar</li>
+            <li><strong>Evitar:</strong> Negacionismo, exageraciones, discurso derrotista</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Ejemplo de título efectivo:</strong><br>
+            "Amazonas colombiano recupera 10.000 hectáreas con programa de reforestación comunitaria"
+        </div>
+    </div>
+    
+    <!-- CATEGORÍA 9: ENTRETENIMIENTO -->
+    <div class="page-break"></div>
+    <div class="category-section">
+        <div class="category-title">🎬 5.9. ENTRETENIMIENTO</div>
+        
+        <h3>Tono de Voz</h3>
+        <ul>
+            <li><strong>Ligero y ameno</strong> pero profesional</li>
+            <li><strong>Entusiasta</strong> compartiendo la pasión por el entretenimiento</li>
+            <li><strong>Conversacional</strong> como una charla entre conocedores</li>
+            <li><strong>Respetuoso</strong> con artistas y audiencias diversas</li>
+        </ul>
+        
+        <h3>Tipo de Lenguaje</h3>
+        <ul>
+            <li>Lenguaje accesible y contemporáneo</li>
+            <li>Referencias culturales que conecten con la audiencia</li>
+            <li>Descripciones vívidas que transmitan la experiencia</li>
+            <li>Evitar spoilers innecesarios (advertir cuando haya)</li>
+        </ul>
+        
+        <h3>Estructura Recomendada</h3>
+        <ol>
+            <li><strong>Titular:</strong> Estreno, evento o noticia del mundo del entretenimiento</li>
+            <li><strong>Lead:</strong> La noticia principal, artistas involucrados, fecha de lanzamiento/evento</li>
+            <li><strong>Detalles de la producción:</strong> Argumento (sin spoilers), género, duración</li>
+            <li><strong>Elenco/Artistas:</strong> Quiénes participan, trabajos previos relevantes</li>
+            <li><strong>Contexto:</strong> Antecedentes, expectativas, tendencias</li>
+            <li><strong>Reacciones:</strong> Primeras impresiones, críticas, audiencia</li>
+            <li><strong>Dónde ver/escuchar:</strong> Plataformas, cines, lugares de acceso</li>
+        </ol>
+        
+        <h3>Palabras Clave Frecuentes</h3>
+        <p>entretenimiento, película, serie, música, actor, artista, estreno, festival, concierto, streaming, cine, televisión, celebridad, taquilla</p>
+        
+        <h3>Enfoque Editorial</h3>
+        <ul>
+            <li><strong>Prioridad 1:</strong> Informar sobre estrenos y eventos relevantes</li>
+            <li><strong>Prioridad 2:</strong> Generar interés sin revelar demás</li>
+            <li><strong>Prioridad 3:</strong> Celebrar la diversidad de gustos y expresiones</li>
+            <li><strong>Evitar:</strong> Chismes sin fundamento, juicios personales severos, elitismo</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Ejemplo de título efectivo:</strong><br>
+            "Shakira anuncia gira mundial con fecha confirmada en Colombia para julio"
+        </div>
+    </div>
+    
+    <!-- CATEGORÍA 10: CIENCIA -->
+    <div class="page-break"></div>
+    <div class="category-section">
+        <div class="category-title">🔬 5.10. CIENCIA</div>
+        
+        <h3>Tono de Voz</h3>
+        <ul>
+            <li><strong>Riguroso y preciso</strong> en el manejo de información científica</li>
+            <li><strong>Asombrado y curioso</strong> transmitiendo la fascinación por el descubrimiento</li>
+            <li><strong>Didáctico</strong> explicando conceptos complejos de forma accesible</li>
+            <li><strong>Objetivo</strong> evitando sensacionalismo</li>
+        </ul>
+        
+        <h3>Tipo de Lenguaje</h3>
+        <ul>
+            <li>Términos científicos explicados con analogías comprensibles</li>
+            <li>Proceso científico descrito claramente (hipótesis, método, resultados)</li>
+            <li>Magnitudes presentadas con comparaciones tangibles</li>
+            <li>Evitar exageraciones sobre implicaciones de descubrimientos</li>
+        </ul>
+        
+        <h3>Estructura Recomendada</h3>
+        <ol>
+            <li><strong>Titular:</strong> Descubrimiento científico y su importancia principal</li>
+            <li><strong>Lead:</strong> El hallazgo, quién lo hizo, dónde, por qué es significativo</li>
+            <li><strong>El descubrimiento:</strong> Qué encontraron/descubrieron</li>
+            <li><strong>Cómo lo hicieron:</strong> Metodología en términos accesibles</li>
+            <li><strong>Qué significa:</strong> Implicaciones científicas y prácticas</li>
+            <li><strong>Contexto científico:</strong> Cómo se relaciona con conocimiento previo</li>
+            <li><strong>Voces expertas:</strong> Citas de investigadores, científicos</li>
+            <li><strong>Próximos pasos:</strong> Investigaciones futuras, aplicaciones potenciales</li>
+        </ol>
+        
+        <h3>Palabras Clave Frecuentes</h3>
+        <p>ciencia, investigación, estudio, descubrimiento, experimento, científico, laboratorio, datos, análisis, teoría, evidencia, avance</p>
+        
+        <h3>Enfoque Editorial</h3>
+        <ul>
+            <li><strong>Prioridad 1:</strong> Exactitud científica y verificación de fuentes</li>
+            <li><strong>Prioridad 2:</strong> Traducción efectiva de conceptos complejos</li>
+            <li><strong>Prioridad 3:</strong> Contexto de por qué el descubrimiento importa</li>
+            <li><strong>Evitar:</strong> Sensacionalismo, afirmaciones no probadas, simplificación excesiva</li>
+        </ul>
+        
+        <div class="example">
+            <strong>Ejemplo de título efectivo:</strong><br>
+            "Investigadores colombianos desarrollan prueba que detecta cáncer en 30 minutos"
+        </div>
+        
+        <div class="success-box">
+            <strong>🔬 Nota Importante:</strong> En noticias científicas, siempre verifica que los estudios mencionados estén publicados en revistas revisadas por pares (peer-reviewed). Evita reportar estudios preliminares como conclusiones definitivas.
+        </div>
+    </div>
+
+    <!-- Sección 6: Criterios de Evaluación -->
+    <div class="page-break"></div>
+    <h1>6. Criterios de Evaluación</h1>
+    
+    <p>Tu trabajo será evaluado según los siguientes criterios, que reflejan los objetivos de aprendizaje del ejercicio:</p>
+    
+    <h2>1. Contenido (40 puntos)</h2>
+    
+    <table>
+        <tr>
+            <th>Criterio</th>
+            <th>Puntos</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>Cumplimiento de elementos</td>
+            <td>10</td>
+            <td>Presencia de todos los elementos requeridos: título, subtítulo, lead, imágenes, etiquetas, etc.</td>
+        </tr>
+        <tr>
+            <td>Calidad de redacción</td>
+            <td>10</td>
+            <td>Ortografía, gramática, sintaxis correctas. Coherencia y cohesión textual.</td>
+        </tr>
+        <tr>
+            <td>Tono apropiado</td>
+            <td>10</td>
+            <td>Aplicación correcta del tono según la categoría de la noticia.</td>
+        </tr>
+        <tr>
+            <td>Estructura periodística</td>
+            <td>10</td>
+            <td>Uso efectivo de pirámide invertida, lead que responde las 5W.</td>
+        </tr>
+    </table>
+    
+    <h2>2. UX Writing (30 puntos)</h2>
+    
+    <table>
+        <tr>
+            <th>Criterio</th>
+            <th>Puntos</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>Claridad</td>
+            <td>10</td>
+            <td>Mensajes comprensibles sin ambigüedad. Información fácil de procesar.</td>
+        </tr>
+        <tr>
+            <td>Concisión</td>
+            <td>7</td>
+            <td>Eliminación de palabras innecesarias. Comunicación eficiente.</td>
+        </tr>
+        <tr>
+            <td>Accesibilidad</td>
+            <td>8</td>
+            <td>Lenguaje inclusivo y comprensible para diversos lectores.</td>
+        </tr>
+        <tr>
+            <td>Jerarquización</td>
+            <td>5</td>
+            <td>Información organizada por importancia. Uso efectivo de subtítulos.</td>
+        </tr>
+    </table>
+    
+    <h2>3. Aspectos Técnicos (20 puntos)</h2>
+    
+    <table>
+        <tr>
+            <th>Criterio</th>
+            <th>Puntos</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>HTML semántico</td>
+            <td>5</td>
+            <td>Uso correcto de etiquetas HTML (h1, h2, p, figure, etc.).</td>
+        </tr>
+        <tr>
+            <td>Accesibilidad</td>
+            <td>5</td>
+            <td>Descripciones alt en imágenes. Estructura accesible.</td>
+        </tr>
+        <tr>
+            <td>Metadatos</td>
+            <td>5</td>
+            <td>Title, meta description, fecha, autor, categoría completos.</td>
+        </tr>
+        <tr>
+            <td>Nomenclatura</td>
+            <td>5</td>
+            <td>Nombres de archivos descriptivos, organización en carpetas.</td>
+        </tr>
+    </table>
+    
+    <h2>4. Colaboración (10 puntos)</h2>
+    
+    <table>
+        <tr>
+            <th>Criterio</th>
+            <th>Puntos</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>Uso de Git</td>
+            <td>4</td>
+            <td>Commits apropiados, rama personal, push exitoso.</td>
+        </tr>
+        <tr>
+            <td>Mensajes de commit</td>
+            <td>3</td>
+            <td>Mensajes descriptivos y claros.</td>
+        </tr>
+        <tr>
+            <td>Participación</td>
+            <td>3</td>
+            <td>Colaboración con compañeros, retroalimentación constructiva.</td>
+        </tr>
+    </table>
+    
+    <div class="highlight-box">
+        <strong>Puntuación Total: 100 puntos</strong>
+        <ul style="margin-top: 10px;">
+            <li>90-100 puntos: Excelente</li>
+            <li>80-89 puntos: Sobresaliente</li>
+            <li>70-79 puntos: Bueno</li>
+            <li>60-69 puntos: Aceptable</li>
+            <li>Menos de 60: Necesita mejora</li>
+        </ul>
+    </div>
+
+    <!-- Sección 7: GitHub -->
+    <div class="page-break"></div>
+    <h1>7. Instrucciones para Trabajo Colaborativo en GitHub</h1>
+    
+    <h2>👥 Flujo de Trabajo Colaborativo</h2>
+    
+    <h3>Antes de Comenzar</h3>
+    <ol>
+        <li>Asegúrate de tener Git instalado en tu computadora</li>
+        <li>Configura tu nombre y email en Git:
+            <div class="example">
+                <code>git config --global user.name "Tu Nombre"</code><br>
+                <code>git config --global user.email "tu@email.com"</code>
+            </div>
+        </li>
+        <li>Clona el repositorio del proyecto</li>
+    </ol>
+    
+    <h3>Durante el Ejercicio</h3>
+    
+    <h4>1. Crea tu Rama Personal</h4>
+    <div class="example">
+        <code>git checkout -b tu-nombre-apellido</code>
+    </div>
+    <p>Esto crea una rama independiente donde trabajarás sin afectar el trabajo de otros.</p>
+    
+    <h4>2. Trabaja en tus Noticias</h4>
+    <p>Crea y edita tus archivos HTML siguiendo las instrucciones del ejercicio.</p>
+    
+    <h4>3. Guarda tus Cambios Frecuentemente</h4>
+    <div class="example">
+        <code>git add .</code><br>
+        <code>git commit -m "Añadida noticia de salud sobre vacunas"</code>
+    </div>
+    <p>Haz commits cada vez que completes una noticia o un grupo de cambios relacionados.</p>
+    
+    <h4>4. Actualiza tu Rama</h4>
+    <p>Periódicamente, actualiza tu rama con los cambios de main:</p>
+    <div class="example">
+        <code>git pull origin main</code>
+    </div>
+    
+    <h4>5. Sube tus Cambios</h4>
+    <div class="example">
+        <code>git push origin tu-nombre-apellido</code>
+    </div>
+    
+    <h3>Al Finalizar</h3>
+    
+    <h4>Crear un Pull Request</h4>
+    <ol>
+        <li>Ve al repositorio en GitHub</li>
+        <li>Haz clic en "Compare & pull request"</li>
+        <li>Completa el formulario:
+            <ul>
+                <li><strong>Título:</strong> "Noticias de [Tu Nombre] - Ejercicio Completo"</li>
+                <li><strong>Descripción:</strong> Lista las 30 noticias creadas por categoría</li>
+            </ul>
+        </li>
+        <li>Asigna el pull request al profesor</li>
+        <li>Haz clic en "Create pull request"</li>
+    </ol>
+    
+    <h2>⚠️ Resolución de Problemas Comunes</h2>
+    
+    <h3>Conflicto al hacer Push</h3>
+    <p>Si Git te indica que hay conflictos:</p>
+    <ol>
+        <li>Actualiza tu rama: <code>git pull origin main</code></li>
+        <li>Abre los archivos con conflictos en tu editor</li>
+        <li>Busca las marcas de conflicto (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>)</li>
+        <li>Decide qué versión mantener o combina ambas</li>
+        <li>Elimina las marcas de conflicto</li>
+        <li>Guarda el archivo</li>
+        <li><code>git add .</code></li>
+        <li><code>git commit -m "Resueltos conflictos"</code></li>
+        <li><code>git push origin tu-rama</code></li>
+    </ol>
+    
+    <h3>Olvidaste Crear una Rama</h3>
+    <p>Si comenzaste a trabajar en main por error:</p>
+    <ol>
+        <li>Guarda tus cambios sin hacer commit</li>
+        <li><code>git stash</code> (guarda cambios temporalmente)</li>
+        <li><code>git checkout -b tu-nombre-apellido</code></li>
+        <li><code>git stash pop</code> (recupera tus cambios)</li>
+        <li>Continúa trabajando normalmente</li>
+    </ol>
+    
+    <h3>Quieres Deshacer el Último Commit</h3>
+    <div class="example">
+        <code>git reset --soft HEAD~1</code>
+    </div>
+    <p>Esto deshace el último commit pero mantiene tus cambios para que puedas corregirlos.</p>
+    
+    <h2>👍 Mejores Prácticas</h2>
+    
+    <ul>
+        <li><strong>Haz commits frecuentes:</strong> No esperes a terminar todo</li>
+        <li><strong>Mensajes descriptivos:</strong> Explica qué cambios hiciste</li>
+        <li><strong>Sincroniza regularmente:</strong> Pull de main cada 30 minutos</li>
+        <li><strong>Revisa antes de push:</strong> Verifica que todo funcione</li>
+        <li><strong>Comunica problemas:</strong> Pide ayuda si encuentras dificultades</li>
+    </ul>
+
+    <!-- Sección 8: Recursos -->
+    <div class="page-break"></div>
+    <h1>8. Recursos y Referencias</h1>
+    
+    <h2>📚 Referencias de UX Writing</h2>
+    <ul>
+        <li><strong>Content Design</strong> - Sarah Richards (libro recomendado)</li>
+        <li><strong>Strategic Writing for UX</strong> - Torrey Podmajersky</li>
+        <li><strong>Guía de UX Writing de Google:</strong> design.google/library/ux-writing/</li>
+        <li><strong>Content Design London:</strong> contentdesign.london</li>
+    </ul>
+    
+    <h2>✍️ Guías de Estilo y Redacción</h2>
+    <ul>
+        <li><strong>Manual de Estilo de la Fundéu:</strong> fundeu.es</li>
+        <li><strong>Guía de Redacción de EL PAÍS</strong></li>
+        <li><strong>Manual de Estilo de la RAE</strong></li>
+        <li><strong>Diccionario Panhispánico de Dudas:</strong> rae.es/dpd</li>
+    </ul>
+    
+    <h2>📸 Recursos de Imágenes Gratuitas</h2>
+    <ul>
+        <li><strong>Unsplash:</strong> unsplash.com - Fotografías de alta calidad</li>
+        <li><strong>Pexels:</strong> pexels.com - Imágenes y videos gratuitos</li>
+        <li><strong>Pixabay:</strong> pixabay.com - Banco de imágenes libre</li>
+        <li><strong>Freepik:</strong> freepik.com - Imágenes, vectores, iconos</li>
+    </ul>
+    
+    <h2>🛠️ Herramientas Útiles</h2>
+    <ul>
+        <li><strong>Hemingway Editor:</strong> hemingwayapp.com - Mejora legibilidad</li>
+        <li><strong>Grammarly:</strong> grammarly.com - Corrección gramatical</li>
+        <li><strong>LanguageTool:</strong> languagetool.org - Corrector en español</li>
+        <li><strong>Character Counter:</strong> charactercounttool.com - Cuenta caracteres</li>
+    </ul>
+    
+    <h2>👨‍💻 Editores de Código</h2>
+    <ul>
+        <li><strong>Visual Studio Code:</strong> code.visualstudio.com (Recomendado)</li>
+        <li><strong>Sublime Text:</strong> sublimetext.com</li>
+        <li><strong>Atom:</strong> atom.io</li>
+    </ul>
+    
+    <h3>Extensiones Recomendadas para VS Code:</h3>
+    <ul>
+        <li><strong>Live Server:</strong> Previsualización en tiempo real</li>
+        <li><strong>Prettier:</strong> Formateo automático de código</li>
+        <li><strong>Spanish - Code Spell Checker:</strong> Corrección ortográfica</li>
+        <li><strong>HTML CSS Support:</strong> Autocompletado de CSS en HTML</li>
+    </ul>
+    
+    <h2>🐛 Git y GitHub</h2>
+    <ul>
+        <li><strong>Git - La guía sencilla:</strong> rogerdudler.github.io/git-guide/index.es.html</li>
+        <li><strong>GitHub Learning Lab:</strong> lab.github.com</li>
+        <li><strong>Pro Git (libro gratis):</strong> git-scm.com/book/es/v2</li>
+    </ul>
+    
+    <h2>🎓 Sobre Periodismo Digital</h2>
+    <ul>
+        <li><strong>Manual de Periodismo Digital:</strong> Mindy McAdams</li>
+        <li><strong>The Elements of Journalism:</strong> Bill Kovach & Tom Rosenstiel</li>
+        <li><strong>AP Stylebook:</strong> Guía de estilo periodístico</li>
+    </ul>
+    
+    <div class="success-box">
+        <strong>🎯 Consejo Final:</strong> Marca estos recursos en tus favoritos. Te serán útiles no solo para este ejercicio, sino a lo largo de tu carrera profesional como diseñador crossmedia.
+    </div>
+
+    <!-- Footer Final -->
+    <div class="page-break"></div>
+    <div class="footer">
+        <h2 style="text-align: center; color: #4A90E2; margin-bottom: 20px;">¡Mucho éxito en tu ejercicio!</h2>
+        <p style="text-align: center; font-size: 16px;">Recuerda: La práctica constante es la clave para dominar el UX Writing y la construcción de contenido.</p>
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #4A90E2;">
+            <p><strong>Universidad Cooperativa de Colombia</strong></p>
+            <p>Programa de Diseño Crossmedia</p>
+            <p>Séptimo Semestre - Marzo 2026</p>
+        </div>
+    </div>
+</body>
+</html>

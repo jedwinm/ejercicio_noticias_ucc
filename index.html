@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Noticias UCC - Ejercicio de Diseño Crossmedia</title>
+    <meta name="description" content="Sitio educativo para ejercicio de construcción de contenido y UX Writing">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                    </svg>
+                    <div>
+                        <h1 class="site-title">Portal de Noticias UCC</h1>
+                        <p class="site-subtitle">Ejercicio Académico - Diseño Crossmedia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección de Bienvenida -->
+    <section class="welcome-section">
+        <div class="container">
+            <div class="welcome-card">
+                <div class="icon-wrapper">
+                    <svg class="welcome-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                    </svg>
+                </div>
+                <h2 class="welcome-title">Bienvenido al Ejercicio de Construcción de Contenido</h2>
+                <p class="welcome-text">
+                    Este sitio web es una herramienta educativa diseñada para estudiantes de séptimo semestre de Diseño Crossmedia. 
+                    A través de este ejercicio práctico, desarrollarás habilidades en <strong>construcción de contenido</strong>, 
+                    <strong>UX Writing</strong> y <strong>escritura para personas</strong>.
+                </p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        <span><strong>Duración:</strong> 2 horas</span>
+                    </div>
+                    <div class="info-item">
+                        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        <span><strong>Modalidad:</strong> Colaborativo (GitHub)</span>
+                    </div>
+                    <div class="info-item">
+                        <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                        <span><strong>Entrega:</strong> 30 noticias (3 por categoría)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías de Noticias -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Categorías de Noticias</h2>
+                <p class="section-description">Selecciona una categoría para explorar las noticias. Cada categoría tiene lineamientos específicos de tono y estilo.</p>
+            </div>
+
+            <div class="categories-grid">
+                <!-- Categoría: Salud -->
+                <a href="#salud" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Salud</h3>
+                    <p class="category-description">Información médica, bienestar y prevención</p>
+                    <span class="category-badge">0/3 noticias</span>
+                </a>
+
+                <!-- Categoría: Política -->
+                <a href="#politica" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Política</h3>
+                    <p class="category-description">Análisis político, gobierno y legislación</p>
+                    <span class="category-badge">0/3 noticias</span>
+                </a>
+
+                <!-- Categoría: Deportes -->
+                <a href="#deportes" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3v18h18M3 17l3-3 4 4 8-8 3 3"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Deportes</h3>
+                    <p class="category-description">Competiciones, atletas y resultados</p>
+                    <span class="category-badge">0/3 noticias</span>
+                </a>
+
+                <!-- Categoría: Tecnología -->
+                <a href="#tecnologia" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Tecnología</h3>
+                    <p class="category-description">Innovación, gadgets y tendencias tech</p>
+                    <span class="category-badge">0/3 noticias</span>
+                </a>
+
+                <!-- Categoría: Cultura -->
+                <a href="#cultura" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Cultura</h3>
+                    <p class="category-description">Arte, eventos y expresiones culturales</p>
+                    <span class="category-badge">0/3 noticias</span>
+                </a>
+
+                <!-- Categoría: Economía -->
+                <a href="#economia" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Economía</h3>
+                    <p class="category-description">Mercados, finanzas y negocios</p>
+                    <span class="category-badge">0/3 noticias</span>
+                </a>
+
+                <!-- Categoría: Educación -->
+                <a href="#educacion" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Educación</h3>
+                    <p class="category-description">Aprendizaje, instituciones y pedagogía</p>
+                    <span class="category-badge">0/3 noticias</span>
+                </a>
+
+                <!-- Categoría: Medio Ambiente -->
+                <a href="#medio-ambiente" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Medio Ambiente</h3>
+                    <p class="category-description">Ecología, sostenibilidad y cambio climático</p>
+                    <span class="category-badge">0/3 noticias</span>
+                </a>
+
+                <!-- Categoría: Entretenimiento -->
+                <a href="#entretenimiento" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Entretenimiento</h3>
+                    <p class="category-description">Cine, música, series y celebridades</p>
+                    <span class="category-badge">0/3 noticias</span>
+                </a>
+
+                <!-- Categoría: Ciencia -->
+                <a href="#ciencia" class="category-card">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Ciencia</h3>
+                    <p class="category-description">Descubrimientos, investigación y avances</p>
+                    <span class="category-badge">0/3 noticias</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instrucciones Rápidas -->
+    <section class="instructions-section">
+        <div class="container">
+            <div class="instructions-card">
+                <h2 class="instructions-title">¿Cómo realizar el ejercicio?</h2>
+                <div class="steps-grid">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <h3>Lee los lineamientos</h3>
+                        <p>Revisa el documento LINEAMIENTOS_EJERCICIO.pdf para entender el tono y estilo de cada categoría.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <h3>Clona el repositorio</h3>
+                        <p>Descarga el proyecto desde GitHub y configura tu entorno de trabajo local.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <h3>Usa la plantilla</h3>
+                        <p>Duplica template-noticia.html para crear cada noticia siguiendo la estructura HTML.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <h3>Redacta contenido</h3>
+                        <p>Escribe 3 noticias por categoría aplicando principios de UX Writing y escritura para personas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portal de Noticias UCC</h3>
+                    <p>Ejercicio académico de Diseño Crossmedia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Universidad Cooperativa de Colombia</h4>
+                    <p>Séptimo Semestre - 2026</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Lineamientos (PDF)</a></li>
+                        <li><a href="#">README.md</a></li>
+                        <li><a href="template-noticia.html">Plantilla de noticia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Universidad Cooperativa de Colombia. Material educativo.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
