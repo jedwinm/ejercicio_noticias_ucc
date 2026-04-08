@@ -7,11 +7,14 @@
     <title>Título de la Noticia - Portal de Noticias UCC</title>
     <meta name="description" content="Descripción breve de la noticia (150-160 caracteres)">
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <!-- Header Principal -->
     <header class="site-header">
         <div class="container">
+            
             <div class="header-content">
                 <div class="logo">
                     <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -22,7 +25,7 @@
                         <p class="site-subtitle">Ejercicio Académico - Diseño Crossmedia</p>
                     </div>
                 </div>
-                <a href="index.html" class="back-button">
+                <a href="../../index.html" class="back-button">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
                     </svg>
@@ -31,41 +34,56 @@
             </div>
         </div>
     </header>
-
-    <!-- Artículo Principal -->
-    <article class="article-container">
+    
+    <section class="categories-section">
         <div class="container">
-            <!-- Breadcrumb / Categoría -->
-            <!-- INSTRUCCIÓN: Reemplaza "Categoría" con la categoría correspondiente (Salud, Política, Deportes, etc.) -->
             <nav class="breadcrumb">
-                <a href="index.html">Inicio</a>
+                <a href="../../index.html">Inicio</a>
                 <span class="separator">/</span>
-                <span class="current">Categoría</span>
+                <span class="current">Política</span>
             </nav>
+            <div class="section-header">
+                <h2 class="section-title">Noticias de política</h2>
+                <p class="section-description">Mantente informado sobre los últimos acontecimientos en el ámbito político.</p>
+            </div>
 
-            <!-- Encabezado del Artículo -->
-            <header class="article-header">
-                <!-- INSTRUCCIÓN: Este es el título principal de la noticia (H1). Debe ser claro, conciso y atractivo.
-                     Longitud recomendada: 50-70 caracteres
-                     Ejemplo: "Nueva tecnología revoluciona el tratamiento del cáncer" -->
-                <h1 class="article-title">Noticias de Política</h1>
-                
-                
-            </header>
-        </div>
-    </article>
+            <div class="categories-grid">
 
-    <main>
-        <div class="container">
-            <!-- INSTRUCCIÓN: Aquí va el contenido principal de la noticia. Puedes incluir texto, imágenes, videos, etc.
-                 Asegúrate de que el contenido sea relevante y esté bien estructurado. Utiliza subtítulos (H2, H3) para organizar la información. -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <h2>Subtítulo 1</h2>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h2>Subtítulo 2</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                <!-- Noticia1 -->
+                <a href="../politica/noticia-politica-legislacion-colombia.html" class="category-card">
+                    <figure class="imagen-noticia">
+                    <img src="img/Secretario_General_de_la_Nación.png" 
+                         alt="Secretario General de la Nación, con traje formal, hablando en un podio con el escudo de Colombia, en un evento oficial.">
+                    </figure>
+                    <h3 class="category-title">Legislación en Colombia</h3>
+                    <p class="category-description">Congreso de Colombia aplaza debates de reformas clave ante proximidad de comicios presidenciales</p>
+                    
+                </a>
+
+                <!-- Noticia2 -->
+                <a href="../politica/noticia-politica-proceso-electoral-peru.html" class="category-card">
+                        <figure class="imagen-noticia">
+                            <img src="img/Jurado_Nacional_de_Elecciones.jpg" 
+                                alt="Jurado Nacional de Elecciones.">
+                        </figure>
+                    <h3 class="category-title">Proceso electoral en Perú</h3>
+                    <p class="category-description">Perú entra en recta final para elecciones generales bajo estricta vigilancia internacional</p>
+                </a>
+
+                <!-- Noticia3 -->
+                <a href="../politica/noticia-politica-cumbre-sostenibilidad-ibague.html" class="category-card">
+                    <figure class="imagen-noticia">
+                            <img src="img/Alianza_Aliados_Sostenibles.jpg" 
+                                alt="Alianza/ Aliados Sostenibles para la cumbre de sostenibilidad en Ibagué.">
+                    </figure>
+                    <h3 class="category-title">Cumbre de Sostenibilidad en Ibagué</h3>
+                    <p class="category-description">Líderes globales se reúnen en Colombia para la Cumbre Glocal de Economía Circular.</p>
+                </a>
+
+            </div>
         </div>
-    </main>
+    </section>
+
 
 
     <!-- Footer del Sitio -->
