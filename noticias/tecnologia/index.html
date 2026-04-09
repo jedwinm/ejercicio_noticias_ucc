@@ -3,96 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- INSTRUCCIÓN: Reemplaza el título con el título real de tu noticia -->
-    <title>Título de la Noticia - Portal de Noticias UCC</title>
-    <meta name="description" content="Descripción breve de la noticia (150-160 caracteres)">
+    <title>Inicio - Portal de Noticias UCC</title>
+    <meta name="description" content="Noticias de tecnología - Portal UCC">
     <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
-    <!-- Header Principal -->
-    <header class="site-header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
-                    </svg>
-                    <div>
-                        <h1 class="site-title">Portal de Noticias UCC</h1>
-                        <p class="site-subtitle">Ejercicio Académico - Diseño Crossmedia</p>
-                    </div>
-                </div>
-                <a href="index.html" class="back-button">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
-                    </svg>
-                    Volver al inicio
-                </a>
-            </div>
-        </div>
-    </header>
 
-    <!-- Artículo Principal -->
-    <article class="article-container">
-        <div class="container">
-            <!-- Breadcrumb / Categoría -->
-            <!-- INSTRUCCIÓN: Reemplaza "Categoría" con la categoría correspondiente (Salud, Política, Deportes, etc.) -->
-            <nav class="breadcrumb">
-                <a href="index.html">Inicio</a>
-                <span class="separator">/</span>
-                <span class="current">Tecnología</span>
-            </nav>
-
-            <!-- Encabezado del Artículo -->
-            <header class="article-header">
-                <!-- INSTRUCCIÓN: Este es el título principal de la noticia (H1). Debe ser claro, conciso y atractivo.
-                     Longitud recomendada: 50-70 caracteres
-                     Ejemplo: "Nueva tecnología revoluciona el tratamiento del cáncer" -->
-                <h1 class="article-title">Noticias de tecnología</h1>
-                
-                
-            </header>
-        </div>
-    </article>
-
-    <main>
-        <div class="container">
-            <!-- INSTRUCCIÓN: Aquí va el contenido principal de la noticia. Puedes incluir texto, imágenes, videos, etc.
-                 Asegúrate de que el contenido sea relevante y esté bien estructurado. Utiliza subtítulos (H2, H3) para organizar la información. -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <h2>Subtítulo 1</h2>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h2>Subtítulo 2</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-        </div>
-    </main>
-
-
-    <!-- Footer del Sitio -->
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Portal de Noticias UCC</h3>
-                    <p>Ejercicio académico de Diseño Crossmedia</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Universidad Cooperativa de Colombia</h4>
-                    <p>Séptimo Semestre - 2026</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Recursos</h4>
-                    <ul>
-                        <li><a href="#">Lineamientos (PDF)</a></li>
-                        <li><a href="#">README.md</a></li>
-                        <li><a href="index.html">Volver al inicio</a></li>
-                    </ul>
+<!-- HEADER -->
+<header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                </svg>
+                <div>
+                    <h1 class="site-title">Portal de Noticias UCC</h1>
+                    <p class="site-subtitle">Diseño Crossmedia - Tecnología</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Universidad Cooperativa de Colombia. Material educativo.</p>
+        </div>
+    </div>
+</header>
+
+<!-- BIENVENIDA -->
+<section class="welcome-section">
+    <div class="container">
+        <div class="welcome-card fade-in-up">
+            <div class="icon-wrapper">
+                <svg class="welcome-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 20h9"></path>
+                    <path d="M12 4h9"></path>
+                    <path d="M4 9h16"></path>
+                    <path d="M4 15h16"></path>
+                </svg>
+            </div>
+            <h2 class="welcome-title">Noticias de Tecnología</h2>
+            <p class="welcome-text">
+                Explora las últimas innovaciones, avances digitales y tendencias tecnológicas que están transformando el mundo.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- NOTICIAS -->
+<section class="categories-section">
+    <div class="container">
+
+        <div class="section-header">
+            <h2 class="section-title">Últimas Noticias</h2>
+            <p class="section-description">
+                Selección de las noticias más importantes en el mundo de la tecnología
+            </p>
+        </div>
+
+        <div class="categories-grid">
+
+           <!-- NOTICIA 1 -->
+<a href="noticia-tecnologia-alternativa-wifi.html" class="category-card fade-in-up">
+    
+    <div class="category-image" style="height:100px;">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tecnología inalámbrica" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+
+    <h3 class="category-title">Tecnología inalámbrica supera el WiFi</h3>
+    <p class="category-description">
+        Un sistema basado en luz alcanza velocidades de 360 Gbps revolucionando la conectividad.
+    </p>
+    <span class="category-badge">Leer noticia</span>
+</a>
+
+<!-- NOTICIA 2 -->
+<a href="noticia-tecnologia-nuevo-samsung.html" class="category-card fade-in-up">
+    
+    <div class="category-image" style="height:100px;">
+        <img src="https://images.unsplash.com/photo-1592890288564-76628a30a657?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Smartphone Samsung" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+
+    <h3 class="category-title">Samsung presenta pantalla de privacidad</h3>
+    <p class="category-description">
+        El nuevo Galaxy S26 Ultra introduce una tecnología.
+    </p>
+    <span class="category-badge">Leer noticia</span>
+</a>
+
+<!-- NOTICIA 3 -->
+<a href="noticias/tecnologia/noticia3.html" class="category-card fade-in-up">
+    
+    <div class="category-image" style="height:100px;">
+        <img src="https://images.unsplash.com/photo-1535378620166-273708d44e4c?q=80&w=1557&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Robot doméstico" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+
+    <h3 class="category-title">Robots domésticos cambian la vida en el hogar</h3>
+    <p class="category-description">
+        Nuevos dispositivos inteligentes automatizan tareas diarias.
+    </p>
+    <span class="category-badge">Leer noticia</span>
+</a>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Portal de Noticias UCC</h3>
+                <p>Ejercicio académico de Diseño Crossmedia</p>
+            </div>
+            <div class="footer-section">
+                <h4>Universidad Cooperativa de Colombia</h4>
+                <p>Séptimo Semestre - 2026</p>
+            </div>
+            <div class="footer-section">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Lineamientos</a></li>
+                    <li><a href="#">README.md</a></li>
+                    <li><a href="index.html">Volver al inicio</a></li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Universidad Cooperativa de Colombia</p>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
