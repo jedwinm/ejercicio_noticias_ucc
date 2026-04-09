@@ -37,6 +37,9 @@ ejercicio_noticias_ucc/
     ├── medio-ambiente/
     ├── entretenimiento/
     └── ciencia/
+    └── moda/
+    └── gastronomia/
+    └── ia/
 ```
 
 ---

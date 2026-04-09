@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imagen-noticia {
+  margin: var(--spacing-xl) 0;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--neu-shadow-md);
+}
+
+.imagen-noticia img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
