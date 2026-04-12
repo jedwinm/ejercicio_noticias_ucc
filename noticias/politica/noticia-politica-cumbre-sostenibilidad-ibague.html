@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- INSTRUCCIÓN: Reemplaza el título con el título real de tu noticia -->
+    <title>Título de la Noticia - Portal de Noticias UCC</title>
+    <meta name="description" content="Descripción breve de la noticia (150-160 caracteres)">
+    <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+    <!-- Header Principal -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"></path>
+                    </svg>
+                    <div>
+                        <h1 class="site-title">Portal de Noticias UCC</h1>
+                        <p class="site-subtitle">Ejercicio Académico - Diseño Crossmedia</p>
+                    </div>
+                </div>
+                <a href="index.html" class="back-button">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                    </svg>
+                    Volver al inicio
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Artículo Principal -->
+    <article class="article-container">
+        <div class="container">
+            <!-- Breadcrumb / Categoría -->
+            <!-- INSTRUCCIÓN: Reemplaza "Categoría" con la categoría correspondiente (Salud, Política, Deportes, etc.) -->
+            <nav class="breadcrumb">
+                <a href="index.html">Inicio</a>
+                <span class="separator">/</span>
+                <span class="current">Política</span>
+            </nav>
+
+            <!-- Encabezado del Artículo -->
+            <header class="article-header">
+                <!-- INSTRUCCIÓN: Este es el título principal de la noticia (H1). Debe ser claro, conciso y atractivo.
+                     Longitud recomendada: 50-70 caracteres
+                     Ejemplo: "Nueva tecnología revoluciona el tratamiento del cáncer" -->
+                <h1 class="article-title">Cumbre de Sostenibilidad en Ibagué</h1>
+                
+                <!-- INSTRUCCIÓN: El subtítulo o bajada complementa el título con información adicional.
+                     Longitud recomendada: 100-150 caracteres
+                     Ejemplo: "Investigadores de la Universidad de Harvard desarrollan un método innovador que aumenta la efectividad del tratamiento en un 40%" -->
+                <p class="article-subtitle">Líderes globales se reúnen en Colombia para la Cumbre Glocal de Economía Circular.</p>
+                
+                <!-- Metadatos del Artículo -->
+                <div class="article-meta">
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                        <!-- INSTRUCCIÓN: Reemplaza con el nombre del autor -->
+                        <span>Por <strong>Luisa Sanchez</strong></span>
+                    </div>
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                        <!-- INSTRUCCIÓN: Reemplaza con la fecha de publicación en formato: DD de Mes de YYYY -->
+                        <span>12 de abril de 2026</span>
+                    </div>
+                    <div class="meta-item">
+                        <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                        </svg>
+                        <!-- INSTRUCCIÓN: Reemplaza con la categoría correspondiente -->
+                        <span class="category-tag">Política</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Imagen Destacada -->
+            <!-- INSTRUCCIÓN: Esta es la imagen principal de la noticia. 
+                 - Reemplaza el src con la ruta de tu imagen
+                 - Reemplaza el alt con una descripción detallada de la imagen
+                 - Actualiza el caption con el pie de foto y créditos
+                 Ejemplo alt: "Científicos trabajando en laboratorio con equipos de investigación oncológica"
+                 Ejemplo caption: "Equipo de investigación de la Universidad de Harvard. Foto: Jane Smith / Reuters" -->
+            <figure class="featured-image">
+                <img src="img/Alcaldia_de_Ibague.jpg" 
+                     alt="Vista panorámica de la alcaldía de Ibagué">
+                <figcaption>Alcaldía de Ibagué. <span class="photo-credit">Oficina de Prensa</span></figcaption>
+            </figure>
+
+            <!-- Contenido Principal del Artículo -->
+            <div class="article-content">
+                <!-- INSTRUCCIÓN: El primer párrafo debe responder las 5W: Qué, Quién, Cuándo, Dónde, Por qué.
+                     Este párrafo es crucial y debe captar la atención del lector.
+                     Longitud recomendada: 60-80 palabras -->
+                <p class="lead-paragraph">
+                    <strong>La ciudad de Ibagué ha sido confirmada como la sede oficial de la "Nova Next Summit",</strong> la Cumbre Glocal de Economía Circular que se llevará a cabo del 21 al 23 de abril. El evento político y técnico reunirá a representantes de más de 20 países y organismos internacionales como la OCDE para discutir políticas públicas que transformen el modelo de producción lineal en sistemas sostenibles de escala regional.
+                </p>
+
+                <!-- INSTRUCCIÓN: Los siguientes párrafos desarrollan la noticia en orden de importancia (pirámide invertida).
+                     Cada párrafo debe tener una idea principal clara.
+                     Usa frases cortas y directas. Evita jerga innecesaria.
+                     Longitud recomendada por párrafo: 40-60 palabras -->
+                
+                <h2>La diplomacia ambiental en el centro de la agenda regional</h2>
+                <p>
+                    En un mundo que enfrenta los efectos directos de la crisis climática en 2026, la economía circular se ha convertido en una prioridad de Estado. Colombia, al ser uno de los países más biodiversos, busca liderar la transición hacia la sostenibilidad en América Latina, integrando a gobiernos locales (lo "glocal") en la toma de decisiones internacionales.
+                </p>
+
+                <!-- Imagen de Apoyo 1 -->
+                <!-- INSTRUCCIÓN: Las imágenes secundarias complementan el contenido.
+                     Colócalas estratégicamente para dividir el texto largo.
+                     No olvides el alt descriptivo y el caption informativo -->
+                <figure class="article-image">
+                    <img src="img/Alianza_Aliados_Sostenibles.jpg" 
+                         alt="Alianza Aliados Sostenibles">
+                    <figcaption>Caracol Radio.<span class="photo-credit">Alianza Aliados Sostenibles</span></figcaption>
+                </figure>
+
+                <h2>El Pacto de Ibagué: Compromisos para el horizonte 2030</h2>
+                <p>
+                    La agenda de la cumbre incluye la participación de más de 800 asistentes, entre los que destacan ministros de medio ambiente, diseñadores industriales internacionales y expertos en energías renovables. Se espera que durante el encuentro se firme el "Pacto de Ibagué", un documento que compromete a las ciudades intermedias a reducir su huella de carbono en un 30 % para 2030 mediante la gestión de residuos sólidos.
+                </p>
+
+                <p>
+                    El enfoque de esta edición es la integración de la tecnología blockchain para el rastreo de residuos industriales y la creación de incentivos fiscales para empresas que implementen modelos de reuso total. Los líderes gubernamentales discutirán cómo estas políticas pueden generar empleo verde en comunidades vulnerables, mitigando la migración climática.
+                </p>
+
+                <!-- INSTRUCCIÓN: Puedes usar blockquotes para destacar citas textuales de fuentes o expertos.
+                     Las citas añaden credibilidad y voz humana a la noticia.
+                     Siempre incluye el nombre y cargo/contexto de quien cita -->
+                <blockquote class="article-quote">
+                    <p>"Ibagué no solo será la capital musical, sino el centro del pensamiento sostenible donde se decidirá cómo las regiones pueden salvar el planeta desde lo local."</p>
+                    <cite>— Johanna Aranda, Alcaldesa de Ibagué.</cite>
+                </blockquote>
+
+                <p>
+                    El evento cuenta con el respaldo de la ONU Hábitat y diversas ONGs que buscan presionar por legislaciones más estrictas contra el plástico de un solo uso en el hemisferio sur. La seguridad del evento estará a cargo de la Policía Nacional con un refuerzo especial para garantizar la integridad de las delegaciones extranjeras.
+                </p>
+
+                <!-- Imagen de Apoyo 2 -->
+                <figure class="article-image">
+                    <img src="img/OCDE.jpg" 
+                        alt="Logo de la OCDE">
+                    <figcaption>OCDE.<span class="photo-credit">Prensa Internacional</span></figcaption>
+                </figure>
+
+                <h2>Proyecciones económicas y el camino hacia la COP31</h2>
+                <p>
+                    El éxito de esta cumbre posicionará a Colombia como un referente en diplomacia ambiental justo antes de la COP31. Las implicaciones económicas para la región del Tolima son significativas, estimándose un ingreso superior a los 5 millones de dólares por concepto de turismo corporativo y alianzas estratégicas.
+                </p>
+
+                <p>
+                    A largo plazo, las políticas discutidas en la Nova Next Summit podrían convertirse en proyectos de ley en los congresos de los países participantes. La unificación de criterios para el etiquetado ambiental y los impuestos al carbono será un tema que marcará las agendas legislativas de 2027 en toda la Unión Europea y el bloque de la Alianza del Pacífico.
+                </p>
+
+                <!-- INSTRUCCIÓN: El párrafo final puede incluir:
+                     - Próximos pasos o desarrollos esperados
+                     - Información sobre seguimiento de la noticia
+                     - Enlaces a recursos relacionados
+                     - Llamado a la acción si es relevante -->
+                <p>
+                    Finalmente, la participación ciudadana en los foros abiertos de la cumbre busca democratizar el conocimiento sobre sostenibilidad. Se espera que los compromisos adquiridos en Ibagué se traduzcan en acciones concretas que reduzcan la contaminación de fuentes hídricas críticas, como el río Magdalena, asegurando el futuro ambiental de la nación.
+                </p>
+            </div>
+
+            <!-- Sección de Etiquetas -->
+            <!-- INSTRUCCIÓN: Las etiquetas (tags) ayudan a categorizar y encontrar contenido relacionado.
+                 Incluye 5-8 palabras clave relevantes a la noticia.
+                 Ejemplos: "salud", "investigación", "universidad", "cáncer", "tratamiento", "innovación" -->
+            <footer class="article-footer">
+                <div class="tags-section">
+                    <h3 class="tags-title">Etiquetas:</h3>
+                    <div class="tags-list">
+                        <span class="tag">#EconomíaCircular</span>
+                        <span class="tag">#Sostenibilidad</span>
+                        <span class="tag">#MedioAmbiente</span>
+                        <span class="tag">#DesarrolloSostenible</span>
+                        <span class="tag">#Cambio Climático</span>
+                        <span class="tag">#Política Ambiental</span>
+                    </div>
+                </div>
+
+                <!-- Información Adicional para Estudiantes -->
+                <div class="student-info">
+                    <h3>Información del Estudiante (eliminar en versión final):</h3>
+                    <ul>
+                        <li><strong>Nombre:</strong> Luisa María Sanchez Rengifo</li>
+                        <li><strong>Código:</strong> 843546</li>
+                        <li><strong>Categoría:</strong> Política</li>
+                        <li><strong>Fecha de entrega:</strong> 12/04/2026</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </article>
+
+    <!-- Footer del Sitio -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Portal de Noticias UCC</h3>
+                    <p>Ejercicio académico de Diseño Crossmedia</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Universidad Cooperativa de Colombia</h4>
+                    <p>Séptimo Semestre - 2026</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">Lineamientos (PDF)</a></li>
+                        <li><a href="#">README.md</a></li>
+                        <li><a href="index.html">Volver al inicio</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Universidad Cooperativa de Colombia. Material educativo.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
